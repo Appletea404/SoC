@@ -1,0 +1,346 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Apr  7 10:46:48 2026
+# Process ID         : 11799
+# Current directory  : /home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1
+# Command line       : vivado -log design_1_FND_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_FND_wrapper.tcl
+# Log file           : /home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/design_1_FND_wrapper.vds
+# Journal file       : /home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/vivado.jou
+# Running On         : Appletea
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : AMD Ryzen 5 8640HS w/ Radeon 760M Graphics
+# CPU Frequency      : 2254.718 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 20775 MB
+# Swap memory        : 25769 MB
+# Total Virtual      : 46545 MB
+# Available Virtual  : 40192 MB
+#-----------------------------------------------------------
+source design_1_FND_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.srcs/utils_1/imports/synth_1/design_1_FND_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.srcs/utils_1/imports/synth_1/design_1_FND_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_FND_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11862
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1913.129 ; gain = 288.535 ; free physical = 8903 ; free virtual = 37207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_wrapper' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/hdl/design_1_FND_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_axi_gpio_0_1' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_axi_gpio_0_1' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_axi_gpio_0_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_axi_gpio_0_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_axi_gpio_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'design_1_FND_axi_gpio_0_0' is unconnected for instance 'axi_gpio_fnd' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:162]
+WARNING: [Synth 8-7023] instance 'axi_gpio_fnd' of module 'design_1_FND_axi_gpio_0_0' has 22 connections declared, but only 21 given [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:162]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_axi_smc_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_axi_smc_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_FND_axi_smc_0' is unconnected for instance 'axi_smc' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:184]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_FND_axi_smc_0' is unconnected for instance 'axi_smc' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:184]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_FND_axi_smc_0' is unconnected for instance 'axi_smc' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:184]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_FND_axi_smc_0' is unconnected for instance 'axi_smc' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:184]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_FND_axi_smc_0' is unconnected for instance 'axi_smc' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:184]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_FND_axi_smc_0' is unconnected for instance 'axi_smc' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:184]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_FND_axi_smc_0' has 78 connections declared, but only 72 given [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:184]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_axi_uartlite_0_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_axi_uartlite_0_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_FND_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:257]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_FND_axi_uartlite_0_0' has 22 connections declared, but only 21 given [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:257]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_clk_wiz_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_clk_wiz_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_clk_wiz_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'locked' of module 'design_1_FND_clk_wiz_0' is unconnected for instance 'clk_wiz' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:279]
+WARNING: [Synth 8-7023] instance 'clk_wiz' of module 'design_1_FND_clk_wiz_0' has 4 connections declared, but only 3 given [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:279]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_mdm_1_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_mdm_1_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_microblaze_riscv_0_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_microblaze_riscv_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_microblaze_riscv_0_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_microblaze_riscv_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_FND_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:296]
+WARNING: [Synth 8-7023] instance 'microblaze_riscv_0' of module 'design_1_FND_microblaze_riscv_0_0' has 52 connections declared, but only 51 given [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:296]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_riscv_0_local_memory_imp_FIK1YY' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:381]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_dlmb_bram_if_cntlr_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_dlmb_bram_if_cntlr_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_dlmb_v10_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_dlmb_v10_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_FND_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:506]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_FND_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:506]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_ilmb_bram_if_cntlr_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_ilmb_bram_if_cntlr_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_ilmb_v10_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_ilmb_v10_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_FND_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:552]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_FND_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:552]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_lmb_bram_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_lmb_bram_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_FND_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:577]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_FND_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:577]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_FND_lmb_bram_0' has 16 connections declared, but only 14 given [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:577]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_riscv_0_local_memory_imp_FIK1YY' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:381]
+INFO: [Synth 8-6157] synthesizing module 'design_1_FND_proc_sys_reset_0_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_proc_sys_reset_0_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/.Xil/Vivado-11799-Appletea/realtime/design_1_FND_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_FND_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:370]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_FND_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:370]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_FND_proc_sys_reset_0_0' has 10 connections declared, but only 8 given [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:370]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/synth/design_1_FND.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FND_wrapper' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/hdl/design_1_FND_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1993.066 ; gain = 368.473 ; free physical = 8816 ; free virtual = 37120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1999.004 ; gain = 374.410 ; free physical = 8816 ; free virtual = 37120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1999.004 ; gain = 374.410 ; free physical = 8816 ; free virtual = 37120
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1999.004 ; gain = 0.000 ; free physical = 8816 ; free virtual = 37120
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_proc_sys_reset_0_0/design_1_FND_proc_sys_reset_0_0/design_1_FND_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_FND_i/proc_sys_reset_0'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_proc_sys_reset_0_0/design_1_FND_proc_sys_reset_0_0/design_1_FND_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_FND_i/proc_sys_reset_0'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_clk_wiz_0/design_1_FND_clk_wiz_0/design_1_FND_clk_wiz_0_in_context.xdc] for cell 'design_1_FND_i/clk_wiz'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_clk_wiz_0/design_1_FND_clk_wiz_0/design_1_FND_clk_wiz_0_in_context.xdc] for cell 'design_1_FND_i/clk_wiz'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_microblaze_riscv_0_0/design_1_FND_microblaze_riscv_0_0/design_1_FND_microblaze_riscv_0_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_microblaze_riscv_0_0/design_1_FND_microblaze_riscv_0_0/design_1_FND_microblaze_riscv_0_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_dlmb_v10_0/design_1_FND_dlmb_v10_0/design_1_FND_dlmb_v10_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_dlmb_v10_0/design_1_FND_dlmb_v10_0/design_1_FND_dlmb_v10_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_ilmb_v10_0/design_1_FND_ilmb_v10_0/design_1_FND_dlmb_v10_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_ilmb_v10_0/design_1_FND_ilmb_v10_0/design_1_FND_dlmb_v10_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_dlmb_bram_if_cntlr_0/design_1_FND_dlmb_bram_if_cntlr_0/design_1_FND_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_dlmb_bram_if_cntlr_0/design_1_FND_dlmb_bram_if_cntlr_0/design_1_FND_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_ilmb_bram_if_cntlr_0/design_1_FND_ilmb_bram_if_cntlr_0/design_1_FND_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_ilmb_bram_if_cntlr_0/design_1_FND_ilmb_bram_if_cntlr_0/design_1_FND_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_lmb_bram_0/design_1_FND_lmb_bram_0/design_1_FND_lmb_bram_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_lmb_bram_0/design_1_FND_lmb_bram_0/design_1_FND_lmb_bram_0_in_context.xdc] for cell 'design_1_FND_i/microblaze_riscv_0_local_memory/lmb_bram'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_mdm_1_0/design_1_FND_mdm_1_0/design_1_FND_mdm_1_0_in_context.xdc] for cell 'design_1_FND_i/mdm_1'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_mdm_1_0/design_1_FND_mdm_1_0/design_1_FND_mdm_1_0_in_context.xdc] for cell 'design_1_FND_i/mdm_1'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_axi_uartlite_0_0/design_1_FND_axi_uartlite_0_0/design_1_FND_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_FND_i/axi_uartlite_0'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_axi_uartlite_0_0/design_1_FND_axi_uartlite_0_0/design_1_FND_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_FND_i/axi_uartlite_0'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_axi_smc_0/design_1_FND_axi_smc_0/design_1_FND_axi_smc_0_in_context.xdc] for cell 'design_1_FND_i/axi_smc'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_axi_smc_0/design_1_FND_axi_smc_0/design_1_FND_axi_smc_0_in_context.xdc] for cell 'design_1_FND_i/axi_smc'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_axi_gpio_0_0/design_1_FND_axi_gpio_0_0/design_1_FND_axi_gpio_0_0_in_context.xdc] for cell 'design_1_FND_i/axi_gpio_fnd'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_axi_gpio_0_0/design_1_FND_axi_gpio_0_0/design_1_FND_axi_gpio_0_0_in_context.xdc] for cell 'design_1_FND_i/axi_gpio_fnd'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_axi_gpio_0_1/design_1_FND_axi_gpio_0_1/design_1_FND_axi_gpio_0_1_in_context.xdc] for cell 'design_1_FND_i/axi_gpio_0'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_axi_gpio_0_1/design_1_FND_axi_gpio_0_1/design_1_FND_axi_gpio_0_1_in_context.xdc] for cell 'design_1_FND_i/axi_gpio_0'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2046.656 ; gain = 0.000 ; free physical = 8825 ; free virtual = 37133
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2046.656 ; gain = 0.000 ; free physical = 8828 ; free virtual = 37132
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_FND_i/microblaze_riscv_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2046.656 ; gain = 422.062 ; free physical = 8858 ; free virtual = 37163
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2054.660 ; gain = 430.066 ; free physical = 8858 ; free virtual = 37163
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_clk_wiz_0/design_1_FND_clk_wiz_0/design_1_FND_clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_clk_wiz_0/design_1_FND_clk_wiz_0/design_1_FND_clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/microblaze_riscv_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/microblaze_riscv_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/microblaze_riscv_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/microblaze_riscv_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/microblaze_riscv_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/microblaze_riscv_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/axi_gpio_fnd. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_FND_i/axi_gpio_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2054.660 ; gain = 430.066 ; free physical = 8858 ; free virtual = 37163
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2054.660 ; gain = 430.066 ; free physical = 8856 ; free virtual = 37162
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2054.660 ; gain = 430.066 ; free physical = 8869 ; free virtual = 37179
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2133.660 ; gain = 509.066 ; free physical = 8674 ; free virtual = 37108
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2133.660 ; gain = 509.066 ; free physical = 8674 ; free virtual = 37108
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2144.676 ; gain = 520.082 ; free physical = 8659 ; free virtual = 37092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2305.488 ; gain = 680.895 ; free physical = 8542 ; free virtual = 36976
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2305.488 ; gain = 680.895 ; free physical = 8542 ; free virtual = 36976
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2305.488 ; gain = 680.895 ; free physical = 8534 ; free virtual = 36968
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2305.488 ; gain = 680.895 ; free physical = 8534 ; free virtual = 36968
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2305.488 ; gain = 680.895 ; free physical = 8534 ; free virtual = 36968
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2305.488 ; gain = 680.895 ; free physical = 8534 ; free virtual = 36968
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_FND_axi_gpio_0_1         |         1|
+|2     |design_1_FND_axi_gpio_0_0         |         1|
+|3     |design_1_FND_axi_smc_0            |         1|
+|4     |design_1_FND_axi_uartlite_0_0     |         1|
+|5     |design_1_FND_clk_wiz_0            |         1|
+|6     |design_1_FND_mdm_1_0              |         1|
+|7     |design_1_FND_microblaze_riscv_0_0 |         1|
+|8     |design_1_FND_proc_sys_reset_0_0   |         1|
+|9     |design_1_FND_dlmb_bram_if_cntlr_0 |         1|
+|10    |design_1_FND_dlmb_v10_0           |         1|
+|11    |design_1_FND_ilmb_bram_if_cntlr_0 |         1|
+|12    |design_1_FND_ilmb_v10_0           |         1|
+|13    |design_1_FND_lmb_bram_0           |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |design_1_FND_axi_gpio_0         |     2|
+|3     |design_1_FND_axi_smc            |     1|
+|4     |design_1_FND_axi_uartlite_0     |     1|
+|5     |design_1_FND_clk_wiz            |     1|
+|6     |design_1_FND_dlmb_bram_if_cntlr |     1|
+|7     |design_1_FND_dlmb_v10           |     1|
+|8     |design_1_FND_ilmb_bram_if_cntlr |     1|
+|9     |design_1_FND_ilmb_v10           |     1|
+|10    |design_1_FND_lmb_bram           |     1|
+|11    |design_1_FND_mdm_1              |     1|
+|12    |design_1_FND_microblaze_riscv_0 |     1|
+|13    |design_1_FND_proc_sys_reset_0   |     1|
+|14    |IBUF                            |     6|
+|15    |OBUF                            |    13|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2305.488 ; gain = 680.895 ; free physical = 8534 ; free virtual = 36968
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2305.488 ; gain = 633.242 ; free physical = 8534 ; free virtual = 36968
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2305.496 ; gain = 680.895 ; free physical = 8534 ; free virtual = 36968
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2305.496 ; gain = 0.000 ; free physical = 8534 ; free virtual = 36968
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2305.496 ; gain = 0.000 ; free physical = 8707 ; free virtual = 37143
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ebe447d7
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2305.496 ; gain = 864.992 ; free physical = 8707 ; free virtual = 37143
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1507.656; main = 1507.656; forked = 267.771
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2997.066; main = 2305.492; forked = 942.402
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2329.500 ; gain = 0.000 ; free physical = 8707 ; free virtual = 37143
+INFO: [Common 17-1381] The checkpoint '/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/synth_1/design_1_FND_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_FND_wrapper_utilization_synth.rpt -pb design_1_FND_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 10:47:12 2026...

@@ -1,0 +1,225 @@
+
+*** Running vivado
+    with args -log design_1_FND_dlmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_FND_dlmb_v10_0.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Apr  7 09:31:04 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_FND_dlmb_v10_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_FND_dlmb_v10_0
+Command: synth_design -top design_1_FND_dlmb_v10_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9049
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1849.508 ; gain = 420.734 ; free physical = 1076 ; free virtual = 29452
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_FND_dlmb_v10_0' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_dlmb_v10_0/synth/design_1_FND_dlmb_v10_0.vhd:89]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_v10' declared at '/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ipshared/7495/hdl/lmb_v10_v3_0_vh_rfs.vhd:91' bound to instance 'U0' of component 'lmb_v10' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_dlmb_v10_0/synth/design_1_FND_dlmb_v10_0.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ipshared/7495/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-3491] module 'FDS' declared at '/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43311' bound to instance 'POR_FF_I' of component 'FDS' [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ipshared/7495/hdl/lmb_v10_v3_0_vh_rfs.vhd:170]
+INFO: [Synth 8-6157] synthesizing module 'FDS' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43311]
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43311]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ipshared/7495/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'design_1_FND_dlmb_v10_0' (0#1) [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_dlmb_v10_0/synth/design_1_FND_dlmb_v10_0.vhd:89]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1924.477 ; gain = 495.703 ; free physical = 390 ; free virtual = 28770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1942.289 ; gain = 513.516 ; free physical = 397 ; free virtual = 28777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1942.289 ; gain = 513.516 ; free physical = 397 ; free virtual = 28777
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1948.227 ; gain = 0.000 ; free physical = 394 ; free virtual = 28777
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_dlmb_v10_0/design_1_FND_dlmb_v10_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.gen/sources_1/bd/design_1_FND/ip/design_1_FND_dlmb_v10_0/design_1_FND_dlmb_v10_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/design_1_FND_dlmb_v10_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/design_1_FND_dlmb_v10_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.227 ; gain = 0.000 ; free physical = 170 ; free virtual = 28492
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  FDS => FDSE: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2015.227 ; gain = 0.000 ; free physical = 174 ; free virtual = 28487
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2015.227 ; gain = 586.453 ; free physical = 322 ; free virtual = 28080
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2023.230 ; gain = 594.457 ; free physical = 322 ; free virtual = 28080
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/design_1_FND_dlmb_v10_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2023.230 ; gain = 594.457 ; free physical = 322 ; free virtual = 28080
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2023.230 ; gain = 594.457 ; free physical = 336 ; free virtual = 28095
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2023.230 ; gain = 594.457 ; free physical = 369 ; free virtual = 28010
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2088.230 ; gain = 659.457 ; free physical = 223 ; free virtual = 27504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2088.230 ; gain = 659.457 ; free physical = 260 ; free virtual = 27542
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2097.246 ; gain = 668.473 ; free physical = 197 ; free virtual = 27478
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2259.059 ; gain = 830.285 ; free physical = 219 ; free virtual = 26293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2259.059 ; gain = 830.285 ; free physical = 219 ; free virtual = 26293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2259.059 ; gain = 830.285 ; free physical = 219 ; free virtual = 26293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2259.059 ; gain = 830.285 ; free physical = 219 ; free virtual = 26293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2259.059 ; gain = 830.285 ; free physical = 213 ; free virtual = 26287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2259.059 ; gain = 830.285 ; free physical = 211 ; free virtual = 26285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |FDS  |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2259.059 ; gain = 830.285 ; free physical = 218 ; free virtual = 26292
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 2259.059 ; gain = 757.348 ; free physical = 219 ; free virtual = 26284
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2259.066 ; gain = 830.285 ; free physical = 219 ; free virtual = 26284
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2259.066 ; gain = 0.000 ; free physical = 218 ; free virtual = 26284
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2259.066 ; gain = 0.000 ; free physical = 1141 ; free virtual = 27173
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  FDS => FDSE: 1 instance 
+
+Synth Design complete | Checksum: 17ed2968
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 2259.066 ; gain = 881.859 ; free physical = 1138 ; free virtual = 27169
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1186.408; main = 1179.391; forked = 178.091
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2968.637; main = 2259.062; forked = 942.402
+INFO: [Common 17-1381] The checkpoint '/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/design_1_FND_dlmb_v10_0_synth_1/design_1_FND_dlmb_v10_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_FND_dlmb_v10_0, cache-ID = 84ccb783a79ef44b
+INFO: [Common 17-1381] The checkpoint '/home/appletea/workspace_onedevice_2/SoC/project_1_FND/project_1_FND.runs/design_1_FND_dlmb_v10_0_synth_1/design_1_FND_dlmb_v10_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_FND_dlmb_v10_0_utilization_synth.rpt -pb design_1_FND_dlmb_v10_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 09:31:55 2026...
